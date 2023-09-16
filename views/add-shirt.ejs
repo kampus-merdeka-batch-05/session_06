@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs", { title: 'Add Shirt'}) %>
+
+<body>
+<h1>Add New Shirt</h1>
+
+  <form action="/add-new-shirt" method="POST">
+    <label for="id_shirt">Id</label>
+    <input type="number" id="id_shirt" name="id_shirt">
+
+    <label for="merk_shirt">Merk</label>
+    <input type="text" id="merk_shirt" name="merk_shirt">
+
+    <input type="submit">
+  </form>
+
+</body>
+</html>

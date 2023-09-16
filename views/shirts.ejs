@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs", { title: 'Shirts'}) %>
+
+<body>
+  <h1>Shirts</h1>
+
+  <a href="add-shirt">Add new shirt</a>
+
+  <ul>
+    <% data.forEach(item => { %>
+      
+      <li><%= item.merk %> </li>
+    
+    <% }) %>
+  </ul>
+</body>
+</html>
